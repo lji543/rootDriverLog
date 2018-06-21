@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Root</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<div>
+			<p>Register Driver:</>
+			<input id="driverName" type="text">
+			<button onClick="registerDriver()"
+				type="button" name="button">Register</button>
+		</div>
+
+		<div>
+			<p>Log Trips:</p>
+			<div>
+				<span>Driver: </span>
+				<select id="driverSelect">
+					<option value="">-</option>
+				</select>
+			</div>
+			<input id="tripInfo" type="text">
+			<button onClick="logTrip()"
+				type="button" name="button">Log</button>
+		</div>
+
+		<p id="userAlert"></p>
+
+		<div>Driver List:</div>
+		<ul id="driverList"></ul>
+
+		<script src="main.js"></script>
+
+	</body>
+</html>
